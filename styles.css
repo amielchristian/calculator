@@ -1,0 +1,48 @@
+:root {
+    --display: rgb(255, 255, 244);
+    --buttons: rgb(188, 188, 188);
+    --body: rgb(188, 207, 202);
+    --border: rgb(60, 60, 60);
+  }
+
+.calc-body {
+    background-color: var(--body);
+    border: 5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 450px;
+    margin: auto;
+}
+
+.display    {
+    background-color: var(--display);
+    width: 425px;
+    height: 150px;
+    margin: 40px 2.5px 20px 2.5px;
+    border: 2.5px solid var(--border);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button  {
+    background-color: var(--buttons);
+    width: 100px;
+    height: 80px;
+    margin: 2.5px;
+    border: 2.5px solid var(--border);
+}
+
+.delete {
+    width: 209px;
+    height: 80px;
+}
+.clear {
+    width: 209px;
+    height: 80px;
+}
