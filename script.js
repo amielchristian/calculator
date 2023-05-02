@@ -124,9 +124,6 @@ function inputNum() {
             }
             num1 = this.textContent;
         }
-        if (num1 == "Infinity") {
-            return;
-        }
         else    {
             // disregard it when the '.' button is clicked and there is already a decimal point in the number
             if (this.textContent == '.' && num1.includes('.')) {
@@ -138,6 +135,9 @@ function inputNum() {
             }
             // add a digit to the number
             num1 = num1+""+this.textContent;
+        }
+        if (num1 == "Infinity") {
+            return;
         }
         currentNumField.textContent = num1;
     }
