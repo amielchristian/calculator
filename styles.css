@@ -3,6 +3,8 @@
     --buttons: rgb(188, 188, 188);
     --body: rgb(188, 207, 202);
     --border: rgb(60, 60, 60);
+    --selected: rgb(230, 230, 230);
+    --clicked: rgb(215, 215, 215);
   }
 
 .calc-body {
@@ -18,10 +20,18 @@
 
 .display    {
     background-color: var(--display);
-    width: 425px;
-    height: 150px;
+    width: 377px;
+    height: 102px;
     margin: 40px 2.5px 20px 2.5px;
+    padding: 24px;
     border: 2.5px solid var(--border);
+}
+.current-num    {
+    margin: 0px;
+    font-family: 'Lucida Console', 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
 }
 
 .buttons {
@@ -36,6 +46,9 @@ button  {
     height: 80px;
     margin: 2.5px;
     border: 2.5px solid var(--border);
+    font-family: 'Lucida Console', 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .delete {
